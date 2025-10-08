@@ -1,0 +1,48 @@
+.app-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 40px;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  background-color: #f0f0f0;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.puzzle-section {
+  text-align: center;
+}
+
+.steps-section {
+  width: 350px;
+  height: 450px;
+  background: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  overflow-y: auto;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+}
+
+.steps-section h2 {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.steps-box p {
+  background: #fafafa;
+  padding: 10px 12px;
+  margin: 8px 0;
+  border-radius: 8px;
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 14px;
+  border-left: 4px solid #1976d2;
+  transition: transform 0.2s;
+}
+
+.steps-box p:hover {
+  transform: translateX(5px);
+}

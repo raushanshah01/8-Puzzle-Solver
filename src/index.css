@@ -1,0 +1,66 @@
+:root {
+  --primary-color: #5d5dff;
+  --secondary-color: #333333;
+  --text-color: #e0e0e0;
+  --bg-color: #1a1a1a;
+  --card-bg: #2b2b2b;
+  --shadow-color: rgba(0, 0, 0, 0.4);
+
+  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--bg-color);
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 3em;
+  line-height: 1.1;
+  color: var(--primary-color);
+  text-shadow: 2px 2px 4px var(--shadow-color);
+}
+
+button {
+  border-radius: 8px;
+  border: none;
+  padding: 0.8em 1.8em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+  background-color: var(--primary-color);
+  color: white;
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 8px var(--shadow-color);
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px var(--shadow-color);
+}
+
+/* Specific button styles */
+button.shuffle-btn {
+  background-color: var(--secondary-color);
+  box-shadow: 0 4px 6px var(--shadow-color);
+}
